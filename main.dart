@@ -1,3 +1,5 @@
+import 'dart:io';
+
 void main(){
   //Tipos de datos
 
@@ -24,4 +26,14 @@ void main(){
 
   print(edad1);
   print(edad2);
+
+  //Concatenacion e interpolacion
+  String nombre1 = "Amanda";
+  String pais = "Brasil";
+
+  String text1 = "Hola, soy " + nombre1 + " y vivo en " + pais; //Concatenacion
+  print(text1);
+
+  String text2 = "Hola soy $nombre1 y vivo en $pais"; //Interpolacion
+  print(text2);
 }
